@@ -5,7 +5,6 @@ document.getElementById("para-2").innerText = endDate;
 const inputs = document.querySelectorAll("input")
 
 function clock(){
-
     const end = new Date(endDate);
     const newDate = new Date();
 
