@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <p id="Title">Calculator</p>
+        <div id="display">
+            <input type="text" placeholder="Enter Your Digit" id="display1">
+        </div>
+        <div class="btns">
+            <input type="button" value="1" onclick="display1.value += '1' ">
+            <input type="button" name="btn-2" value="2" onclick="display1.value += '2'">
+            <input type="button" name="btn-3" value="3" onclick="display1.value += '3'">
+            <input type="button" name="del" value="DEL" onclick="display1.value = display1.value.slice(0,-1)">
+        </div>
+        <div class="btns">
+            <input type="button" name="btn-4" value="4" onclick="display1.value += '4'">
+            <input type="button" name="btn-5" value="5" onclick="display1.value += '5'">
+            <input type="button" name="btn-6" value="6" onclick="display1.value += '6'">
+            <input type="button" name="clr" value="CLR" onclick="display1.value = '' ">
+        </div>
+        <div class="btns">
+            <input type="button" name="btn-7" value="7" onclick="display1.value += '7'">
+            <input type="button" name="btn-8" value="8" onclick="display1.value += '8'">
+            <input type="button" name="btn-9" value="9" onclick="display1.value += '9'">    
+            <input type="button" name="" value="+" onclick="display1.value += '+'">
+        </div>
+        <div class="btns">
+            <input type="button" value="*" onclick="display1.value += '*'">
+            <input type="button" value="/" onclick="display1.value += '/'">
+            <input type="button" value="%" onclick="display1.value += '%'">
+            <input type="button" value="-" onclick="display1.value += '-'">
+        </div>
+        <div class="btns">
+            <input type="submit" value="=" onclick="display1.value = eval(display1.value)">
+        </div>
+       
+    </div>
+    <script src="countdown.js"></script>
+</body>
+</html>
